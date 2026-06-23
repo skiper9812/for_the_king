@@ -1,0 +1,13 @@
+{
+  "itemGroup.for_the_king": "Example Mod Tab",
+  "block.for_the_king.example_block": "Example Block",
+  "item.for_the_king.example_item": "Example Item",
+
+  "for_the_king.configuration.title": "For the King Configs",
+  "for_the_king.configuration.section.for_the_king.common.toml": "For the King Configs",
+  "for_the_king.configuration.section.for_the_king.common.toml.title": "For the King Configs",
+  "for_the_king.configuration.items": "Item List",
+  "for_the_king.configuration.logDirtBlock": "Log Dirt Block",
+  "for_the_king.configuration.magicNumberIntroduction": "Magic Number Text",
+  "for_the_king.configuration.magicNumber": "Magic Number"
+}

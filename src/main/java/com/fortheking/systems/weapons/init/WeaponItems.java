@@ -1,4 +1,4 @@
-package com.fortheking.weapons.init;
+package com.fortheking.systems.weapons.init;
 
 import com.fortheking.FortheKing;
 import net.neoforged.neoforge.registries.DeferredRegister;

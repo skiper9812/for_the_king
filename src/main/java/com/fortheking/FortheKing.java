@@ -5,8 +5,8 @@ import com.mojang.logging.LogUtils;
 
 import com.fortheking.core.init.CoreCreativeTabs;
 import com.fortheking.core.data.CoreAttachments;
-import com.fortheking.weapons.init.WeaponBlocks;
-import com.fortheking.weapons.init.WeaponItems;
+import com.fortheking.systems.weapons.init.WeaponBlocks;
+import com.fortheking.systems.weapons.init.WeaponItems;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;

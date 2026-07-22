@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:zombie",
+    "minecraft:husk",
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton",
+    "minecraft:cow",
+    "minecraft:sheep",
+    "minecraft:pig",
+    "minecraft:chicken",
+    "minecraft:goat",
+    "minecraft:mule",
+    "minecraft:horse",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "minecraft:cat",
+    "minecraft:wolf",
+    "minecraft:ocelot"
+  ]
+}

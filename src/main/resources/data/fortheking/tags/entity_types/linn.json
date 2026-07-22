@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:marker",
+    "minecraft:wither_skeleton"
+  ]
+}

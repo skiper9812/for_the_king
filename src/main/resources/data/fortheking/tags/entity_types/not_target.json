@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fishing_bobber",
+    "minecraft:item",
+    "minecraft:evoker_fangs",
+    "minecraft:marker",
+    "minecraft:area_effect_cloud",
+    "minecraft:armor_stand"
+  ]
+}

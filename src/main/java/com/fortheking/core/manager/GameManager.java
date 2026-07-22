@@ -7,6 +7,7 @@ import com.fortheking.systems.traps.TrapSystem;
 import com.fortheking.core.util.FTKMath;
 import com.fortheking.core.util.FTKRandom;
 import com.fortheking.systems.magic.MagicSystem;
+import com.fortheking.systems.player.PlayerStatSystem;
 import com.fortheking.systems.weapons.WeaponSystem;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -46,10 +47,11 @@ public class GameManager {
         FortheKing.LOGGER.info("[FTKRandom] nextInRange(1, 6) = {}", FTKRandom.global().nextInRange(1, 6));
 
         // Register default modular sub-systems
+        registerLevelSystem(new PlayerStatSystem());
         registerLevelSystem(new MagicSystem());
         registerLevelSystem(new WeaponSystem());
         registerLevelSystem(new TrapSystem());
-        
+
         FortheKing.LOGGER.info("Registered {} server systems and {} level systems.", SERVER_SYSTEMS.size(), LEVEL_SYSTEMS.size());
     }
 
@@ -74,17 +76,12 @@ public class GameManager {
     @SubscribeEvent
     public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
         if (!event.getEntity().level().isClientSide()) {
-            // Retrieve the data attachment from the player
             PlayerData data = event.getEntity().getData(CoreAttachments.PLAYER_DATA);
-
-            // Log the current value
-            FortheKing.LOGGER.info("Player {} logged in. Custom Mana: {}/{}",
+            FortheKing.LOGGER.info("Player {} logged in. Mana: {}/{}, Spell: {}",
                     event.getEntity().getName().getString(),
                     data.getCustomMana(),
-                    data.getCustomMaxMana());
-
-            // Modify it slightly to test persistence across logins!
-            data.setCustomMana(data.getCustomMana() - 5);
+                    data.getCustomMaxMana(),
+                    data.getActiveSpell());
         }
     }
 }

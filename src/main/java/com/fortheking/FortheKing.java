@@ -7,6 +7,7 @@ import com.fortheking.core.init.CoreCreativeTabs;
 import com.fortheking.core.data.CoreAttachments;
 import com.fortheking.core.init.CoreEntities;
 import com.fortheking.core.init.CoreBlockEntities;
+import com.fortheking.core.init.FTKAttributes;
 import com.fortheking.systems.weapons.init.WeaponBlocks;
 import com.fortheking.systems.weapons.init.WeaponItems;
 
@@ -33,5 +34,8 @@ public class FortheKing {
         // Register Entities & BlockEntities
         CoreEntities.ENTITIES.register(modEventBus);
         CoreBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+
+        // Register Custom Attributes (also registers mod-bus event listener)
+        FTKAttributes.register(modEventBus);
     }
 }

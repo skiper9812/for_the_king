@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import com.fortheking.core.init.CoreCreativeTabs;
+import com.fortheking.core.data.CoreAttachments;
 import com.fortheking.weapons.init.WeaponBlocks;
 import com.fortheking.weapons.init.WeaponItems;
 
@@ -23,5 +24,8 @@ public class FortheKing {
         // Register Modules
         WeaponBlocks.BLOCKS.register(modEventBus);
         WeaponItems.ITEMS.register(modEventBus);
+
+        // Register Data Attachments
+        CoreAttachments.ATTACHMENT_TYPES.register(modEventBus);
     }
 }
